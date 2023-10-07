@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello World!"
+        android:layout_marginTop="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/buttonAboutMe"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/buttonAboutMe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="About Me"
+        android:layout_marginTop="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <Button
+        android:id="@+id/buttonClickyClicky"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Clicky Clicky"
+        android:layout_marginTop="10dp"
+        android:onClick="onButtonClickyClicky"
+        app:layout_constraintTop_toBottomOf="@+id/buttonAboutMe"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/buttonLinkCollector"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Link Collector"
+        app:layout_constraintTop_toBottomOf="@+id/buttonClickyClicky"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="10dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
